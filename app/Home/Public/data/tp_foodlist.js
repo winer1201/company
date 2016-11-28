@@ -1,0 +1,25 @@
+var food_list=[
+	{
+		"shopname":"粗粮人家",
+		"datalist":[
+			{
+				"src":"http://120.92.3.5:15150/restaurant/food_list/jianbing.png",
+				"name":"煎饼大王",
+				"price":"10",
+				"shicai":"食材：玉米面、鸡蛋、葱花、豆瓣酱、香菜、辣椒酱、麻叶"
+			},
+			{
+				"src":"http://120.92.3.5:15150/restaurant/food_list/restaurant/food_list/noodles.png",
+				"name":"牛肉面",
+				"price":"25",
+				"shicai":"食材：面、牛肉、香菜、酸菜"
+			},
+			{
+				"src":"http://120.92.3.5:15150/restaurant/food_list/restaurant/food_list/fruit.png",
+				"name":"水果沙拉",
+				"price":"30",
+				"shicai":"食材：草莓、芒果、火龙果、圣女果、沙拉"
+			}
+		]
+	}
+]
