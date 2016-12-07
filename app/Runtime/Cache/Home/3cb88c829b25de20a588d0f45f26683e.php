@@ -1,8 +1,51 @@
-﻿<layout name="Layout/content_new" />
-    {:loadfile('__PUBLIC__/css/deep_blue/list','css')}
-    {:loadfile('__PUBLIC__/css/deep_blue/addcard','css')}
+<?php if (!defined('THINK_PATH')) exit();?>﻿<html>
+<head>
+    <meta name="page-view-size" content="<?php echo ($reso); ?>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>养老门户</title>
+    <?php echo loadfile('/app/Home/Public/css/deep_blue/layout','css');?>
+    <?php echo loadfile('/app/Home/Public/js/base/new2.0/util','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/new2.0/keyevent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/new2.0/controlEvent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/new2.0/formevent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/new2.0/popupEvent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/enumCollection','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/guid','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/loadimg','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/useraction','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/CyberHelper','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/MsgHelper','js');?>
+    <?php echo loadfile('/app/Home/Public/js/globalconfig','js');?>
+    <?php echo loadfile('/app/Home/Public/js/common','js');?>
+    <script type="text/javascript">
+        var m_reso = '<?php echo ($reso); ?>';
+        var m_publicUrl = '/app/Home/Public';
+        var m_baseUrl = '/oldcard/oldcard_info_new.html';
+        var m_rootUrl = '';
+        var m_usercode = '';
+        var m_user_session = '';
+        var m_areacode = '';
+        var m_websitecode = '';
+        var m_tp_tps_url = "<?php echo ($tp_tps_url); ?>";
+        var m_tp_pms_url = "<?php echo ($tp_pms_url); ?>";
+        var m_tp_cbs_url = "<?php echo ($tp_cbs_url); ?>";
+        var m_tp_ls_url = "<?php echo ($tp_ls_url); ?>";
+        var m_tp_tvportal_url = "<?php echo ($tp_tvportal_url); ?>";
+        var m_tp_gsm_url = "<?php echo ($tp_gsm_url); ?>";
+        var m_tp_pics_url = "<?php echo ($tp_pics_url); ?>";
+        var m_cyber_tvportal_id = "<?php echo ($cyber_tvportal_id); ?>";
+        var m_cyber_tenantid = "<?php echo ($cyber_tenantid); ?>";
+        var m_cyber_epg_id = "<?php echo ($cyber_epg_id); ?>";
+    </script>
+</head>
+<body onload="init()">
+    <div class="wp" id="divwp" >
+        <div class="page">
+            ﻿
+    <?php echo loadfile('/app/Home/Public/css/deep_blue/list','css');?>
+    <?php echo loadfile('/app/Home/Public/css/deep_blue/addcard','css');?>
 
-    {:loadfile('__PUBLIC__/js/mod/oldcard/oldcard_info','js')}
+    <?php echo loadfile('/app/Home/Public/js/mod/oldcard/oldcard_info','js');?>
 <script type="text/javascript">
     function init() {
         if (typeof (page_init) == "function")
@@ -21,7 +64,7 @@
             <table class="oldcard-left"  >
                 <tr>
                     <td class="td">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
-                    <td class="tdes">张国玉</td>
+                    <td class="tdes">张三</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -68,7 +111,7 @@
                     <td></td>
                     <td id="td2" data-up="td0" data-right="td3" style="height:138px;">
                         <div class="tile" style="width:168px; height:48px;">
-                            <img style="width:168px; height:48px;" src="__PUBLIC__/img/oldcard/relieve.png" />
+                            <img style="width:168px; height:48px;" src="/app/Home/Public/img/oldcard/relieve.png" />
                         </div>
                     </td>
                 </tr>
@@ -153,7 +196,7 @@
                     <tr>
                         <td id="td6" colspan="3" align="center" style="text-align:center;height:50px;" data-up="td3" data-left="td2">
                             <div class="tile oldcard-info-rad oldcard-info-noborder" style="margin-left:267px;width:110px; height:33px;display:none;">
-                                <img style="width:110px; height:33px;" src="__PUBLIC__/img/oldcard/向下按钮默认.png" />
+                                <img style="width:110px; height:33px;" src="/app/Home/Public/img/oldcard/向下按钮默认.png" />
                             </div>
                         </td>
                     </tr>
@@ -163,7 +206,7 @@
                 <tr id="text">
                     <td id="td6" data-up="td3">
                         <div class="tile" style="width:110px; height:33px;">
-                            <img style="width:110px; height:33px;" src="__PUBLIC__/img/oldcard/向下按钮默认.png" />
+                            <img style="width:110px; height:33px;" src="/app/Home/Public/img/oldcard/向下按钮默认.png" />
                         </div>
                     </td>
                 </tr>
@@ -171,3 +214,16 @@
         </div>
     </div>
 </div>
+<div class="page-footer">
+                <div id="footer" class="tip">
+                    <label>按&lt;返回&gt;键返回上一页</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        common.initUrl();
+        TpMsgHelper.Init();
+    </script>
+</body>
+</html>

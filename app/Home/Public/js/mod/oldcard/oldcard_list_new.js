@@ -58,7 +58,7 @@ var oldcard_list_instance = {
         callback = tp.util.appendParam(callback, "backUrl", encodeURIComponent(that.backUrl));
         callback = encodeURIComponent(callback);
 
-        if (id == "td3")//新增绑定
+        if (id == "td2")//新增绑定
             url = config.portal_oldcard_bind_url;
         else //查看绑定
             url = config.portal_oldcard_info_url;
@@ -68,7 +68,7 @@ var oldcard_list_instance = {
         tp.util.redirectUrl(url);
 
         var detail = "";
-        if (id == "td3")
+        if (id == "td2")
             detail = "新增绑定";
         else
             detail = "老年卡[" + id + "]";

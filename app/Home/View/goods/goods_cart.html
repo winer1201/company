@@ -6,17 +6,30 @@
             page_init();
     }
 </script>
+<style>
+	.label label{
+		
+		display:inline-block;
+		height:44px;
+		width:120px;
+		line-height:32px;
+		text-align: center;
+		font-size:18px;
+		box-sizing:border-box;
+		float:left;
+	}
+</style>
 <div class="goods-top">
     <div class="goods-info-title" id="page-title">
         <label id="lbltitle">购物车</label>
     </div>
 </div>
 <div class="goods-center" id="page_content">
-    <div style="height:30px;margin-top:15px;text-align:left;">
-        <label style="margin-left:149px;font-size:21px;color:#eeeeee;">已购1件商品，总计1609元</label>
-        <label style="margin-left:360px;font-size:21px;color:#eeeeee;padding:5px;" id="btnclear" data-down="tr_item1" data-right="btnpay">清空购物车</label>
-        <label style="margin-left:10px;font-size:21px;color:#eeeeee;padding:5px;" id="btnpay" data-down="tr_item1" data-right="btnadd" data-left="btnclear">去结算</label>
-        <label style="margin-left:10px;font-size:21px;color:#eeeeee;padding:5px;" id="btnadd" data-down="tr_item1" data-left="btnpay">继续购物</label>
+    <div style="height:45px;text-align:left;"class="label">
+        <span style="margin-left:149px;font-size:21px;color:#eeeeee;float:left;">已购1件商品，总计1609元</span>
+        <label style="margin-left:320px;color:#eeeeee;padding:5px;background:url(/app/Home/Public/img/goods/empty.png) no-repeat" id="btnclear" data-down="tr_item1" data-right="btnpay">清空购物车</label>
+        <label style="margin-left:10px;color:#eeeeee;padding:5px;background:url(/app/Home/Public/img/goods/cal.png) no-repeat" id="btnpay" data-down="tr_item1" data-right="btnadd" data-left="btnclear">去结算</label>
+        <label style="margin-left:10px;color:#eeeeee;padding:5px;background:url(/app/Home/Public/img/goods/cal.png) no-repeat" id="btnadd" data-down="tr_item1" data-left="btnpay">继续购物</label>
     </div>
     <div style="margin-top:16px;margin-left:149px;width:983px;height:487px;background-image:url(/app/Home/Public/img/goods/goods_cart_back.png)">
         <table style="border:0px solid ;width:983px;border-collapse:collapse ;" cellpadding="0" cellspacing="0">
@@ -38,7 +51,7 @@
                     </td>
                     <td style="width:140px;text-align:center;vertical-align:central;">
                         <img src="/app/Home/Public/img/goods/goods_order_min.png">
-                        <label style="font-size:24px;color:#eeeeee;margin-left:20px;margin-right:20px;">1</label>
+                        <label style="font-size:24px;color:#eeeeee;margin-left:20px;margin-right:20px;" id="num_sub">1</label>
                         <img src="/app/Home/Public/img/goods/goods_order_add.png">
                     </td>
                     <td style="vertical-align:central;text-align:center;border-color:#eeeeee;">

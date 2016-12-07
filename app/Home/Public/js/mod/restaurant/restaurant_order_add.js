@@ -38,7 +38,7 @@ var restaurant_order_add = {
             btn_pay_oldcard.style.backgroundImage = "url(" + config.portal_public_url + "img/goods/goods_order_add_pay_bg.png" + ")";
             btn_pay_tvcard.style.backgroundImage = "";
             if (ctr_lbl_all && ctr_lbl_discount) {
-                ctr_lbl_all.innerHTML = "25.00";
+                ctr_lbl_all.innerHTML = "13.00";
                 ctr_lbl_discount.innerHTML = "2.00";
                 if (ctr_item_discount)
                     ctr_item_discount.innerHTML = "￥2.00";
@@ -48,16 +48,19 @@ var restaurant_order_add = {
             btn_pay_oldcard.style.backgroundImage = "";
             btn_pay_tvcard.style.backgroundImage = "url(" + config.portal_public_url + "img/goods/goods_order_add_pay_bg.png" + ")";
             if (ctr_lbl_all && ctr_lbl_discount) {
-                ctr_lbl_all.innerHTML = "27.00";
+                ctr_lbl_all.innerHTML = "15.00";
                 ctr_lbl_discount.innerHTML = "0.00";
                 if (ctr_item_discount)
                     ctr_item_discount.innerHTML = "￥0.00";
             }
         }
-        else if (contorl.curid == "l_pay") {
+        else if (control.curid == "l_pay") {
             //二次确认
             that.confirm();
         }
+        var val=document.getElementById('lbl_all').innerHTML;
+        var item_price=document.getElementById('item_price');
+       		item_price.innerHTML='￥'+val;
     },
     selid: function (id) {
         var that = restaurant_order_add;

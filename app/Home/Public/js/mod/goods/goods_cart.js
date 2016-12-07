@@ -1,7 +1,7 @@
 ﻿function page_init() {
     goods_card.init();
 }
-
+var index=0;
 var goods_card = {
     control: null,
     defaultid: "btnpay",
@@ -16,6 +16,7 @@ var goods_card = {
         that.control = new controlevent({
             extEnter: that.enter,
             selid: that.selid,
+            extMove: that.move,
             defaultid: that.defaultid
         });
         that.control.begin();
@@ -57,6 +58,26 @@ var goods_card = {
             else
                 img.setAttribute("src", "/app/Home/Public/img/goods/goods_cart_unsel_img.png");
         }
+    },
+    move:function(key){
+    	var control=this;
+    	control.baseMove(key);
+    	var num_sub=document.getElementById('num_sub');
+    	if(control.curid=="tr_item1"){
+			if(key == tp_move_key.right){
+				if(index<99){
+					index++;
+					num_sub.innerHTML=index;
+				}
+    			
+			}
+			if(key == tp_move_key.left){
+				if(index>1){
+					index--;
+					num_sub.innerHTML=index;
+				}
+			}
+		}
     },
     selid: function (id) {
         var that = goods_card;

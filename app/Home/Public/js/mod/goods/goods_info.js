@@ -4,6 +4,8 @@
 
 var goods_info = {
     control: null,
+    backUrl: "",
+    playUrl: "",
     defaultid: "",
     data_list: ["img/goods/goods_xyj_1.png", "img/goods/goods_xyj_2.png", "img/goods/goods_xyj_3.png", "img/goods/goods_xyj_4.png"],
     cur_index: 0,
@@ -11,7 +13,6 @@ var goods_info = {
     init_data:false,
     init: function () {
         var that = this;
-
         that.cur_index = tp.util.getQueryString("cur_index");
         if (!that.cur_index || that.cur_index == "")
             that.cur_index = 0;
@@ -83,24 +84,40 @@ var goods_info = {
         that.control.begin();
     },
     move: function (key) {
+    	//console.log(tp_move_key.down);
         var that = goods_info;
-        if (key != tp_move_key.right && key != tp_move_key.left)
-            return;
         var url = "", backUrl = "";
 
         backUrl = tp.util.getQueryString("backUrl");
-
+		if (key != tp_move_key.right && key != tp_move_key.left &&key != tp_move_key.down)
+            return;
         if (key == tp_move_key.right) {
             if (that.cur_index == that.account - 1)
                 return;
             that.cur_index++;
         }
-        else {
+        else if(key == tp_move_key.left){
             if (that.cur_index == 0)
                 return;
             that.cur_index--;
-        }
-        that.formatdata();
+            //console.log(3);
+        }else{
+        	var url = "";
+        	backUrl = "";
+        	backUrl = window.location.href;
+        	url = config.Portal_video_play_url;
+            url = common.setBaseParam(url);
+            url = tp.util.appendParam(url, "backUrl", encodeURIComponent(backUrl));
+            url = tp.util.appendParam(url, "file",'http://vjs.zencdn.net/v/oceans.mp4');
+            tp.util.redirectUrl(url);
+	        
+	    }/*else{
+        	var backUrl = "";
+        	backUrl =portal_goods_order_info_url;
+        	url = common.setBaseParam(backUrl);
+        	tp.util.redirectUrl(url);
+	    }*/
+	        that.formatdata();
     },
     enter: function () {
         var that = goods_info;

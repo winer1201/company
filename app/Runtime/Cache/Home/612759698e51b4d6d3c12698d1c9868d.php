@@ -20,7 +20,7 @@
     <script type="text/javascript">
         var m_reso = '<?php echo ($reso); ?>';
         var m_publicUrl = '/app/Home/Public';
-        var m_baseUrl = '/index/showpage?usercode=1010000201161125052731318&amp;user_session=10100002-c754c59c-9781-48de-ab74-32c07c970bd1&amp;websitecode=WS20161110002&amp;backUrl=http%3A%2F%2F120.92.3.5%3A15010%2Findex%2Fshowpage%3Fusercode%3D1010000201161125052731318%26user_session%3D10100002-c754c59c-9781-48de-ab74-32c07c970bd1%26websitecode%3D%26navcode%3DCM20160817002%26focusid%3Dtd1%26backUrl%3Dhttp%253A%252F%252F120.92.3.5%253A15008%252F%253Fexit%253D1';
+        var m_baseUrl = '/exam/electrocardiogram?usercode=&amp;user_session=&amp;websitecode=&amp;backUrl=&amp;_v=46668';
         var m_rootUrl = '';
         var m_usercode = '';
         var m_user_session = '';
@@ -41,23 +41,46 @@
 <body onload="init()">
     <div class="wp" id="divwp" >
         <div class="page">
-            
-    <?php echo loadfile('/app/Home/Public/js/base/new2.0/tableEvent','js');?>
-    <?php echo loadfile('/app/Home/Public/js/base/new2.0/navevent','js');?>
-    <?php echo loadfile('/app/Home/Public/js/mod/index/index','js');?>
-    <!--<?php echo loadfile('/app/Home/Public/js/index','js');?>-->
+            ﻿
+    <?php echo loadfile('/app/Home/Public/css/deep_blue/list','css');?>
+    <?php echo loadfile('/app/Home/Public/js/mod/exam/exam_electrocardiogram','js');?>
+
 <script type="text/javascript">
     function init() {
         if (typeof (page_init) == "function")
             page_init();
     }
 </script>
-
-<div id="page_navbar" style="padding-left:128px;padding-top:15px;" class="page-navbar">
+<div class="page-list-title">
+    <div class="list-title" id="page-title">
+        <label class="exam-form-title" id="lbltitle">健康档案 - 心电图</label>
+    </div>
 </div>
-<div id="page_content" style="padding-left:118px;margin-top:120px;" class="page-content">
+<div class="page-list" id="page_content">
+    <div class="exam-form-bg" style="background:url(/app/Home/Public/img/exam/exam_bg.png);padding:0px;">
+        <div class="exam-from-col">
+            <label class="exam-from-col-label">本段时间内，您总共测量了191次心电图，其中：</label>
+        </div>
+        <div class="exam-from-col">
+            <label class="exam-from-col-label">心电图正常：</label>
+            <label class="exam-form-label-green">0次</label>
+            <label class="exam-from-col-label">，异常：</label>
+            <label class="exam-form-label-red">0次</label>
+            <label class="exam-from-col-label">，未诊断：</label>
+            <label class="exam-form-label-red">191次</label>
+        </div>
+        <div class="exam-from-col">
+            <label class="exam-from-col-label">如果您对数据报告有任何疑问，请及时咨询私人医生。</label>
+        </div>
+        <div class="exam-from-col">
+            <label class="exam-from-col-label">研究表明，心电变化与心血管疾病有很强的相关性，建议您立即进行 </label>
+            <label class="exam-form-label-green">心血管病风险评估</label>
+        </div>
+    </div>
+    <div class="exam-form-right">
+        <img src="../../app/home/Public/img/exam/exam_right.png" />
+    </div>
 </div>
-
 <div class="page-footer">
                 <div id="footer" class="tip">
                     <label>按&lt;返回&gt;键返回上一页</label>

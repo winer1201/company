@@ -20,7 +20,7 @@
     <script type="text/javascript">
         var m_reso = '<?php echo ($reso); ?>';
         var m_publicUrl = '/app/Home/Public';
-        var m_baseUrl = '/index/showpage?usercode=1010000201161125052731318&amp;user_session=10100002-c754c59c-9781-48de-ab74-32c07c970bd1&amp;websitecode=WS20161110002&amp;backUrl=http%3A%2F%2F120.92.3.5%3A15010%2Findex%2Fshowpage%3Fusercode%3D1010000201161125052731318%26user_session%3D10100002-c754c59c-9781-48de-ab74-32c07c970bd1%26websitecode%3D%26navcode%3DCM20160817002%26focusid%3Dtd1%26backUrl%3Dhttp%253A%252F%252F120.92.3.5%253A15008%252F%253Fexit%253D1';
+        var m_baseUrl = '/oldcard/oldcard_list.html';
         var m_rootUrl = '';
         var m_usercode = '';
         var m_user_session = '';
@@ -41,11 +41,13 @@
 <body onload="init()">
     <div class="wp" id="divwp" >
         <div class="page">
-            
-    <?php echo loadfile('/app/Home/Public/js/base/new2.0/tableEvent','js');?>
-    <?php echo loadfile('/app/Home/Public/js/base/new2.0/navevent','js');?>
-    <?php echo loadfile('/app/Home/Public/js/mod/index/index','js');?>
-    <!--<?php echo loadfile('/app/Home/Public/js/index','js');?>-->
+            ﻿
+    <?php echo loadfile('/app/Home/Public/css/deep_blue/list','css');?> 
+    <?php echo loadfile('/app/Home/Public/css/deep_blue/addcard','css');?> 
+    <?php echo loadfile('/app/Home/Public/js/base/new2.0/tableevent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/mod/oldcard/oldcard_list_new','js');?>
+    <!--<?php echo loadfile('/app/Home/Public/js/base/tableEvent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/mod/oldcard/oldcard_list','js');?>-->
 <script type="text/javascript">
     function init() {
         if (typeof (page_init) == "function")
@@ -53,11 +55,45 @@
     }
 </script>
 
-<div id="page_navbar" style="padding-left:128px;padding-top:15px;" class="page-navbar">
-</div>
-<div id="page_content" style="padding-left:118px;margin-top:120px;" class="page-content">
-</div>
+<style type="text/css">
+    .tile img {
+        width: 195px;
+        height: 204px;
+    }
+</style>
 
+<div class="oldcard-page-list-title">
+    <div class="oldcard-list-title ">
+        <label>老年卡列表页</label>
+        <hr />
+    </div>
+</div>
+<div class="oldcard-page-list oldcard-page-list-oldcard">
+    <table  width="560" class="layout">
+        <tbody>
+            <tr>
+                <td id="td0" cardid="1" style="width: 195px; height: 204px;" jump-url="oldcardinfo.html" data-down="" data-right="td1">
+                    <div class="tile">
+                        <img class="lazy" src="/app/Home/Public/img/list_oldcard/card001.png" data-src="/app/Home/Public/img/list_oldcard/card001.png">
+                    </div>
+                </td>
+                <td id="td1" cardid="2" style="width: 195px; height: 204px;" jump-url="oldcardinfo.html" data-down="" data-right="td2" data-left="td0">
+                    <div class="tile">
+                        <img class="lazy" src="/app/Home/Public/img/list_oldcard/card002.png" data-src="/app/Home/Public/img/list_oldcard/card002.png">
+                    </div>
+                </td>
+                <td id="td2" styletileoldcardwidth: 195px; height: 204px;" jump-url="addoldcard.html" data-down="" data-right="" data-left="td1">
+                    <div class="tile">
+                        <img class="lazy" src="/app/Home/Public/img/list_oldcard/addoldcard.png" data-src="/app/Home/Public/img/list_oldcard/addoldcard.png">
+                    </div>
+                </td>
+                <td id="td4" style="width: 195px; height: 204px;" >
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <div class="page-footer">
                 <div id="footer" class="tip">
                     <label>按&lt;返回&gt;键返回上一页</label>

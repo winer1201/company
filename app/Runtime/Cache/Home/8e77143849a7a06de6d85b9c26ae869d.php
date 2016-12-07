@@ -1,10 +1,44 @@
-﻿<layout name="Layout/content_demo" />
-    {:loadfile('__PUBLIC__/demo/css/layout','css')}
-    {:loadfile('__PUBLIC__/demo/css/oldcard','css')}
-    {:loadfile('__PUBLIC__/demo/css/css','css')}
+<?php if (!defined('THINK_PATH')) exit();?>﻿<html>
+<head>
+    <meta name="page-view-size" content="<?php echo ($reso); ?>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>养老门户</title>
+    <?php echo loadfile('/app/Home/Public/js/base/util','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/keyevent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/controlEvent','js');?>
+    <?php echo loadfile('/app/Home/Public/js/base/enumCollection','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/guid','js');?>
+    <?php echo loadfile('/app/Home/Public/js/tools/loadimg','js');?>
+    <?php echo loadfile('/app/Home/Public/js/globalconfig','js');?>
+    <?php echo loadfile('/app/Home/Public/js/common','js');?>
+    <script type="text/javascript">
+        var m_reso = '<?php echo ($reso); ?>';
+        var m_publicUrl = '/app/Home/Public';
+        var m_baseUrl = '/oldcard/oldcard_info.html';
+        var m_rootUrl = '';
+        var m_usercode = '';
+        var m_user_session = '';
+        var m_areacode = '';
+        var m_websitecode = '';
+        var m_tp_tps_url = "<?php echo ($tp_tps_url); ?>";
+        var m_tp_pms_url = "<?php echo ($tp_pms_url); ?>";
+        var m_tp_cbs_url = "<?php echo ($tp_cbs_url); ?>";
+        var m_tp_ls_url = "<?php echo ($tp_ls_url); ?>";
+        var m_tp_tvportal_url = "<?php echo ($tp_tvportal_url); ?>";
+        var m_tp_gsm_url = "<?php echo ($tp_gsm_url); ?>";
+        var m_tp_pics_url = "<?php echo ($tp_pics_url); ?>";
+        var m_cyber_tvportal_id = "<?php echo ($cyber_tvportal_id); ?>";
+        var m_cyber_tenantid = "<?php echo ($cyber_tenantid); ?>";
+        var m_cyber_epg_id = "<?php echo ($cyber_epg_id); ?>";
+    </script>
+</head>
+    ﻿
+    <?php echo loadfile('/app/Home/Public/demo/css/layout','css');?>
+    <?php echo loadfile('/app/Home/Public/demo/css/oldcard','css');?>
+    <?php echo loadfile('/app/Home/Public/demo/css/css','css');?>
 
-    {:loadfile('__PUBLIC__/demo/js/oldcard','js')}
-    {:loadfile('__PUBLIC__/demo/js/moveoldcard','js')}
+    <?php echo loadfile('/app/Home/Public/demo/js/oldcard','js');?>
+    <?php echo loadfile('/app/Home/Public/demo/js/moveoldcard','js');?>
 <script type="text/javascript">
     function init() {
         if (typeof (page_init) == "function")
@@ -50,7 +84,7 @@
             <table style="width:490px; height:427px; color:#000;">
                 <tr>
                     <td class="td">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
-                    <td class="tdes">张国玉</td>
+                    <td class="tdes">张三</td>
                 </tr>
                 <tr>
                     <td></td>
@@ -91,7 +125,7 @@
                     <td></td>
                     <td id="td2" data-up="td0">
                         <div class="tile" style="width:168px; height:48px;">
-                            <img style="width:168px; height:48px;" src="__PUBLIC__/img/oldcard/relieve.png" />
+                            <img style="width:168px; height:48px;" src="/app/Home/Public/img/oldcard/relieve.png" />
                         </div>
                     </td>
                 </tr>
@@ -125,7 +159,7 @@
                 <tr id="text">
                     <td id="td6" data-up="td3">
                         <div class="tile" style="width:110px; height:33px;">
-                            <img style="width:110px; height:33px;" src="__PUBLIC__/img/oldcard/向下按钮默认.png" />
+                            <img style="width:110px; height:33px;" src="/app/Home/Public/img/oldcard/向下按钮默认.png" />
                         </div>
                     </td>
                 </tr>
@@ -133,3 +167,8 @@
         </div>
     </div>
 </body>
+
+    <script type="text/javascript">
+        common.initUrl();
+    </script>
+</html>

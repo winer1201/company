@@ -63,7 +63,7 @@
         //视频详情页
         config.portal_vedio_new_url = siteUrl + "video/info";        
         //视频播放页
-        config.Portal_video_play_url = siteUrl + "video/play";
+        config.Portal_video_play_url = siteUrl + "video/player";
         //应用详情页
         config.portal_app_url = siteUrl + "index.php/app";
         //应用启动页
@@ -89,7 +89,7 @@
         //老年餐厅-菜品详情页
         config.portal_restaurant_info_url = siteUrl + "info/restaurant";
         //老年餐厅-菜品列表页
-        config.portal_restaurant_food_url = siteUrl + "list/food";
+        config.portal_restaurant_food_url = siteUrl + "restaurant/food_list";
         //老年餐厅-列表页
         config.portal_restaurant_list_url = siteUrl + "list/restaurant";
         //老年餐厅-购物车页

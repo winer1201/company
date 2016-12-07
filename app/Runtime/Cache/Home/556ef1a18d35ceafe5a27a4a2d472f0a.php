@@ -20,7 +20,7 @@
     <script type="text/javascript">
         var m_reso = '<?php echo ($reso); ?>';
         var m_publicUrl = '/app/Home/Public';
-        var m_baseUrl = '/index/showpage?usercode=1010000201161125052731318&amp;user_session=10100002-c754c59c-9781-48de-ab74-32c07c970bd1&amp;websitecode=WS20161110002&amp;backUrl=http%3A%2F%2F120.92.3.5%3A15010%2Findex%2Fshowpage%3Fusercode%3D1010000201161125052731318%26user_session%3D10100002-c754c59c-9781-48de-ab74-32c07c970bd1%26websitecode%3D%26navcode%3DCM20160817002%26focusid%3Dtd1%26backUrl%3Dhttp%253A%252F%252F120.92.3.5%253A15008%252F%253Fexit%253D1';
+        var m_baseUrl = '/goods/goods_info.html';
         var m_rootUrl = '';
         var m_usercode = '';
         var m_user_session = '';
@@ -42,23 +42,44 @@
     <div class="wp" id="divwp" >
         <div class="page">
             
-    <?php echo loadfile('/app/Home/Public/js/base/new2.0/tableEvent','js');?>
-    <?php echo loadfile('/app/Home/Public/js/base/new2.0/navevent','js');?>
-    <?php echo loadfile('/app/Home/Public/js/mod/index/index','js');?>
-    <!--<?php echo loadfile('/app/Home/Public/js/index','js');?>-->
+    <?php echo loadfile('/app/Home/Public/js/mod/goods/goods_info','js');?>
 <script type="text/javascript">
     function init() {
         if (typeof (page_init) == "function")
             page_init();
     }
+    var img_sel = "/app/Home/Public/img/goods/sel_select.png";
+    var img_unsel = "/app/Home/Public/img/goods/sel_unselect.png";
 </script>
-
-<div id="page_navbar" style="padding-left:128px;padding-top:15px;" class="page-navbar">
+<div class="goods-top">
+    <div class="goods-info-title" id="page-title">
+        <label id="lbltitle">欧姆龙电子血压计</label>
+    </div>
 </div>
-<div id="page_content" style="padding-left:118px;margin-top:120px;" class="page-content">
-</div>
-
-<div class="page-footer">
+<div class="goods-center" id="page_content">
+	<div class="arrow" style="position:absolute;left:152px;bottom:14px;">
+		<img src="../../app/home/Public/img/goods/arrow_down.png" alt="" />
+	</div>
+    <div style="height:30px;">
+        <label style="margin-left:700px;font-size:32px;color:#ff0000;">1609</label>
+        <label style="margin-left:0px;font-size:21px;color:#eeeeee;">元起</label>
+        <label style="margin-left:50px;font-size:21px;color:#eeeeee;display:inline-block;height:45px;width:126px;line-height:45px;background:url(../../app/home/Public/img/goods/shop.png) no-repeat" class="goods-item-focus">立即购买</label>
+    </div>
+    <div class="goods-info-form" id="dform">
+        <!--<img src="/app/Home/Public/img/goods/goods_xyj_1.png" />-->
+    </div>
+    <div class="goods-info-sel" id="dsel">
+        <!--<img src="/app/Home/Public/img/goods/sel_select.png" />
+        <img src="/app/Home/Public/img/goods/sel_unselect.png" />
+        <img src="/app/Home/Public/img/goods/sel_unselect.png" />-->
+    </div>
+    <div class="goods-form-right" style="margin-top:-327px;" id="d_right">
+        <img src="../../app/home/Public/img/exam/exam_right.png" />
+    </div>
+    <div class="goods-form-left" style="margin-top:-327px;" id="d_left">
+        <img src="../../app/home/Public/img/exam/exam_left.png" />
+    </div>
+</div><div class="page-footer">
                 <div id="footer" class="tip">
                     <label>按&lt;返回&gt;键返回上一页</label>
                 </div>

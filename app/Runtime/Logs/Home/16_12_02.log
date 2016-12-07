@@ -1,0 +1,359 @@
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /Restaurant/food_list?content_code=CT032016081600133&usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&websitecode=&backUrl=http%3A%2F%2F10.10.20.11%3A15010%2Flist%2Frestaurant%3Fusercode%3D1010000101161121020348500%26user_session%3D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%26websitecode%3D%26contentcode%3D%26pageIndex%3D0%26focusid%3Dtd0%26backUrl%3Dhttp%253A%252F%252F10.10.20.11%253A15010%252Findex%252Fshowpage%253Fusercode%253D1010000101161121020348500%2526user_session%253D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%2526websitecode%253D%2526navcode%253DCM20160815002%2526focusid%253Dtd5%2526backUrl%253Dhttp%25253A%25252F%25252F10.10.20.11%25253A15008%25252F%25253Fexit%25253D1&_v=26339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014057s ]
+INFO: BaseController->formatResolution :: user_session - 【10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2】 $areacode - 【10100001】
+INFO: function->initConfig :: $areacode - 【10100001】
+INFO: ConfigCacheService->init :: $areacode - 【10100001】
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007615s ]
+
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /app/Home/Public/css/img/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /app/Home/Public/css/img/1_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /app/Home/Public/css/img/2_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /Restaurant/QiHao/getuser?usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&_v=86117
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /Restaurant/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-12-02T10:35:34+08:00 ] 10.10.20.102 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2016-12-02T10:41:01+08:00 ] 10.10.20.102 /Restaurant/food_list?content_code=CT032016081600133&usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&websitecode=&backUrl=http%3A%2F%2F10.10.20.11%3A15010%2Flist%2Frestaurant%3Fusercode%3D1010000101161121020348500%26user_session%3D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%26websitecode%3D%26contentcode%3D%26pageIndex%3D0%26focusid%3Dtd0%26backUrl%3Dhttp%253A%252F%252F10.10.20.11%253A15010%252Findex%252Fshowpage%253Fusercode%253D1010000101161121020348500%2526user_session%253D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%2526websitecode%253D%2526navcode%253DCM20160815002%2526focusid%253Dtd5%2526backUrl%253Dhttp%25253A%25252F%25252F10.10.20.11%25253A15008%25252F%25253Fexit%25253D1&_v=26339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+INFO: BaseController->formatResolution :: user_session - 【10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2】 $areacode - 【10100001】
+INFO: function->initConfig :: $areacode - 【10100001】
+INFO: ConfigCacheService->init :: $areacode - 【10100001】
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-12-02T10:41:01+08:00 ] 10.10.20.102 /app/Home/Public/css/img/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+
+[ 2016-12-02T10:41:01+08:00 ] 10.10.20.102 /app/Home/Public/css/img/1_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-12-02T10:41:01+08:00 ] 10.10.20.102 /app/Home/Public/css/img/2_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-12-02T10:41:01+08:00 ] 10.10.20.102 /Restaurant/QiHao/getuser?usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&_v=78878
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T10:41:01+08:00 ] 10.10.20.102 /Restaurant/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-12-02T11:11:29+08:00 ] 10.10.20.102 /Restaurant/food_list?content_code=CT032016081600133&usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&websitecode=&backUrl=http%3A%2F%2F10.10.20.11%3A15010%2Flist%2Frestaurant%3Fusercode%3D1010000101161121020348500%26user_session%3D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%26websitecode%3D%26contentcode%3D%26pageIndex%3D0%26focusid%3Dtd0%26backUrl%3Dhttp%253A%252F%252F10.10.20.11%253A15010%252Findex%252Fshowpage%253Fusercode%253D1010000101161121020348500%2526user_session%253D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%2526websitecode%253D%2526navcode%253DCM20160815002%2526focusid%253Dtd5%2526backUrl%253Dhttp%25253A%25252F%25252F10.10.20.11%25253A15008%25252F%25253Fexit%25253D1&_v=26339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+INFO: BaseController->formatResolution :: user_session - 【10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2】 $areacode - 【10100001】
+INFO: function->initConfig :: $areacode - 【10100001】
+INFO: ConfigCacheService->init :: $areacode - 【10100001】
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2016-12-02T11:11:30+08:00 ] 10.10.20.102 /Restaurant/QiHao/getuser?usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&_v=87983
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T11:11:30+08:00 ] 10.10.20.102 /app/Home/Public/css/img/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-12-02T11:11:30+08:00 ] 10.10.20.102 /app/Home/Public/css/img/1_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+
+[ 2016-12-02T11:11:30+08:00 ] 10.10.20.102 /app/Home/Public/css/img/2_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+
+[ 2016-12-02T11:11:30+08:00 ] 10.10.20.102 /Restaurant/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-12-02T11:11:30+08:00 ] 10.10.20.102 /Restaurant/food_list?content_code=CT032016081600133&usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&websitecode=&backUrl=http%3A%2F%2F10.10.20.11%3A15010%2Flist%2Frestaurant%3Fusercode%3D1010000101161121020348500%26user_session%3D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%26websitecode%3D%26contentcode%3D%26pageIndex%3D0%26focusid%3Dtd0%26backUrl%3Dhttp%253A%252F%252F10.10.20.11%253A15010%252Findex%252Fshowpage%253Fusercode%253D1010000101161121020348500%2526user_session%253D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%2526websitecode%253D%2526navcode%253DCM20160815002%2526focusid%253Dtd5%2526backUrl%253Dhttp%25253A%25252F%25252F10.10.20.11%25253A15008%25252F%25253Fexit%25253D1&_v=26339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+INFO: BaseController->formatResolution :: user_session - 【10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2】 $areacode - 【10100001】
+INFO: function->initConfig :: $areacode - 【10100001】
+INFO: ConfigCacheService->init :: $areacode - 【10100001】
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2016-12-02T11:11:31+08:00 ] 10.10.20.102 /Restaurant/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-12-02T11:11:31+08:00 ] 10.10.20.102 /Restaurant/QiHao/getuser?usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&_v=82214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T11:12:54+08:00 ] 10.10.20.102 /Restaurant/food_list?content_code=CT032016081600133&usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&websitecode=&backUrl=http%3A%2F%2F10.10.20.11%3A15010%2Flist%2Frestaurant%3Fusercode%3D1010000101161121020348500%26user_session%3D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%26websitecode%3D%26contentcode%3D%26pageIndex%3D0%26focusid%3Dtd0%26backUrl%3Dhttp%253A%252F%252F10.10.20.11%253A15010%252Findex%252Fshowpage%253Fusercode%253D1010000101161121020348500%2526user_session%253D10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2%2526websitecode%253D%2526navcode%253DCM20160815002%2526focusid%253Dtd5%2526backUrl%253Dhttp%25253A%25252F%25252F10.10.20.11%25253A15008%25252F%25253Fexit%25253D1&_v=26339
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+INFO: BaseController->formatResolution :: user_session - 【10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2】 $areacode - 【10100001】
+INFO: function->initConfig :: $areacode - 【10100001】
+INFO: ConfigCacheService->init :: $areacode - 【10100001】
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2016-12-02T11:12:54+08:00 ] 10.10.20.102 /Restaurant/QiHao/getuser?usercode=1010000101161121020348500&user_session=10100001-d87b86ef-0de5-480b-9150-37eef8c01ba2&_v=1100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T11:12:54+08:00 ] 10.10.20.102 /Restaurant/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2016-12-02T11:14:37+08:00 ] 10.10.20.102 /goods/goods_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: reso D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 3 行.
+NOTIC: [8] Undefined variable: reso D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 21 行.
+NOTIC: [8] Undefined variable: tp_tps_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 29 行.
+NOTIC: [8] Undefined variable: tp_pms_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 30 行.
+NOTIC: [8] Undefined variable: tp_cbs_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 31 行.
+NOTIC: [8] Undefined variable: tp_ls_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 32 行.
+NOTIC: [8] Undefined variable: tp_tvportal_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 33 行.
+NOTIC: [8] Undefined variable: tp_gsm_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 34 行.
+NOTIC: [8] Undefined variable: tp_pics_url D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 35 行.
+NOTIC: [8] Undefined variable: cyber_tvportal_id D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 36 行.
+NOTIC: [8] Undefined variable: cyber_tenantid D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 37 行.
+NOTIC: [8] Undefined variable: cyber_epg_id D:\tpcloud\tvportal\app\Runtime\Cache\Home\556ef1a18d35ceafe5a27a4a2d472f0a.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2016-12-02T11:14:37+08:00 ] 10.10.20.102 /goods/QiHao/getuser?usercode=&user_session=&_v=17873
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T11:14:38+08:00 ] 10.10.20.102 /goods/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2016-12-02T11:14:42+08:00 ] 10.10.20.102 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: BaseController->formatResolution :: user_session - 【】 $areacode - 【】
+INFO: function->initConfig :: $areacode - 【】
+NOTIC: [8] Undefined index: header D:\tpcloud\tvportal\app\Home\Common\function.php 第 68 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given D:\tpcloud\tvportal\app\Home\Common\function.php 第 78 行.
+NOTIC: [2] file_get_contents(/pageconfig/getactiveinfo?areacode=): failed to open stream: No error D:\tpcloud\tvportal\app\Home\Common\function.php 第 81 行.
+DEBUG: redirecturl - [http://127.0.0.1/index/showpage?usercode=&user_session=&websitecode=&backUrl=]
+
+[ 2016-12-02T11:14:47+08:00 ] 10.10.20.102 /goods/QiHao/getuser?usercode=&user_session=&_v=97201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+ERR: 非法操作:QiHao
+
+[ 2016-12-02T14:56:01+08:00 ] 10.10.20.102 /restaurant/cart?usercode=1010000101160830023804069&user_session=10100001-a983ce47-c9d1-4128-9913-e74e214b7243&websitecode=&backUrl=http%3A%2F%2F10.10.20.11%3A15010%2Frestaurant%2Ffood_list%3Fcontent_code%3DCT032016081600133%26usercode%3D1010000101160830023804069%26user_session%3D10100001-a983ce47-c9d1-4128-9913-e74e214b7243%26websitecode%3D%26backUrl%3Dhttp%253A%252F%252F10.10.20.11%253A15010%252Flist%252Frestaurant%253Fusercode%253D1010000101160830023804069%2526user_session%253D10100001-a983ce47-c9d1-4128-9913-e74e214b7243%2526websitecode%253D%2526contentcode%253D%2526pageIndex%253D0%2526focusid%253Dtd0%2526backUrl%253Dhttp%25253A%25252F%25252F10.10.20.11%25253A15010%25252Findex%25252Fshowpage%25253Fusercode%25253D1010000101160830023804069%252526user_session%25253D10100001-a983ce47-c9d1-4128-9913-e74e214b7243%252526websitecode%25253D%252526navcode%25253DCM20160815002%252526focusid%25253Dtd5%252526backUrl%25253Dhttp%2525253A%2525252F%2525252F10.10.20.11%2525253A15008%2525252F%2525253Fexit%2525253D1%26_v%3D81920%26_v%3D28958%26_v%3D78753%26_v%3D66385%26_v%3D9091&food_id=1&_v=72203
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+INFO: BaseController->formatResolution :: user_session - 【10100001-a983ce47-c9d1-4128-9913-e74e214b7243】 $areacode - 【10100001】
+INFO: function->initConfig :: $areacode - 【10100001】
+INFO: ConfigCacheService->init :: $areacode - 【10100001】
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 0 D:\tpcloud\tvportal\ThinkPHP\Library\Think\Db\Driver.class.php 第 113 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-12-02T14:56:01+08:00 ] 10.10.20.102 /restaurant/Application/Upload/1280x720/background/BG.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+
+[ 2016-12-02T14:56:01+08:00 ] 10.10.20.102 /restaurant/QiHao/getuser?usercode=1010000101160830023804069&user_session=10100001-a983ce47-c9d1-4128-9913-e74e214b7243&_v=12790
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+ERR: 非法操作:QiHao
+

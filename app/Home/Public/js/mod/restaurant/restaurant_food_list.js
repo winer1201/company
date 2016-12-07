@@ -17,9 +17,6 @@ var mapinfo = {
         var that = mapinfo;
         //加载背景图片
         loadingHelper.loadbg();
-        //that.map_category_code = tp.util.getQueryString("code");
-        //if (!that.map_category_code)
-        //    that.map_category_code = "";
         tp_ui.popup.loading.show({
             closeCallBack: function () {
                 that.addlisten();
@@ -32,17 +29,6 @@ var mapinfo = {
         var that = mapinfo;
         var map_category = null;
         if (!food_list || !food_list || food_list.length <= 0) return;
-/*
-        for (var i = 0; i < food_list.length; i++) {
-             map_category = tp_foodlist[i];
-            if (!map_category) continue;
-            if (map_category.map_category_code == that.map_category_code) {
-                that.datalist = map_category.datalist;
-                that.title = map_category.map_category_name;
-                break;
-            }
-        }
-        */
         var html='',d_up="",d_down="";
         
 		var info=food_list[0].datalist;
@@ -56,219 +42,38 @@ var mapinfo = {
 				d_down=" data-down='food"+(i+1)+"' ";
 				d_up=" data-up='food"+(i-1)+"' ";
 			}
-		         html =html+'<dl class="clear" id="food'+i+'" '+d_up + d_down +'><dt><img src="'+info[i].src+'" /></dt>'
+		         html =html+'<dl class="clear" food_id="'+(i+1)+'" id="food'+i+'" '+d_up + d_down +'><dt><img src="'+info[i].src+'" /></dt>'
 			+  '<dd class="food_name clear"><span>'+info[i].name+'</span><i>￥'+info[i].price+'</i></dd><dd class="shicai">'+info[i].shicai+'</dd></dl>';
 		}
 		document.all("foodlist").innerHTML=html;  
         if (!that.datalist) return;
-        //that.datalist = tp_maplist.rccf.datalist;
+        
         that.account = that.datalist.length;
-        //that.formatdata();
-
-        //tp_ui.popup.loading.close();
-    },
-    formatdata:function(){
-       /* var that = mapinfo;
-        if (!that.datalist || this.datalist.length <= 0)
-            return;
-        var startindex = 0;
-        var endindex = 0;
-        var index=0;        
-        var dtop = null;
-        var dcenter = null;
-        var dbottom = null;
-        var d_title = null;
-        var hastop = false, hasbottom = false;
-
-        if (that.direct == 0) {
-            that.curindex = 0;
-            that.startindex = 0;
-            if (that.account > 1)
-                that.endindex = 1;
-            else
-                that.endindex = 0;
-        }
-        else if (that.direct == -1) {
-            if (that.curindex == 0)
-                return;
-            if (that.curindex == that.startindex) {
-                that.startindex = that.startindex - 1;
-                that.endindex = that.endindex - 1;
-            }
-            that.curindex = that.curindex - 1;
-        }
-        else {
-            if (that.curindex >= that.account - 1)
-                return;
-            if (that.curindex == that.endindex) {
-                that.startindex = that.startindex + 1;
-                that.endindex = that.endindex + 1;
-            }
-            that.curindex = that.curindex + 1;
-        }
-
-        dtop = document.all("content-top");
-        dcenter = document.all("content-center");
-        dbottom = document.all("content-bottom");
-        d_title = document.all("map_name");
-
-        d_title.innerHTML = that.title;
-
-        //top
-        if (dtop && that.direct != 0) {
-            dtop.innerHTML = "";
-            that.formattop();
-        }        
-        //center
-        if (dcenter) {
-            dcenter.innerHTML = "";
-            that.formatcenter();
-        }
-            
-        //bottom
-        if (dbottom) {
-            dbottom.innerHTML = "";
-            that.formatbottom();
-        }            
-        
-        if (dtop.innerHTML.length > 10)
-            hastop = true;
-        if (dbottom.innerHTML.length > 10)
-            hasbottom = true;
-
-        if (hastop && hasbottom) {
-            dtop.style.height = "172px";
-            dtop.style.marginTop = "-120px";
-            dbottom.style.height = "65px";
-        }
-        else if (!hastop && !hasbottom)
-        {
-            dtop.style.height = "0px";
-            dtop.style.marginTop = "0px";
-            dbottom.style.height = "0px";
-        }
-        else {
-            if(hastop)
-            {
-                //dtop.style.height = "140px";
-                dtop.style.height = "172px";
-                dtop.style.marginTop = "-70px";
-                dbottom.style.height = "0px";
-            }
-            else {
-                dtop.style.height = "0px";
-                dtop.style.marginTop = "0px";
-                dbottom.style.height = "140px";
-            }
-        }
-        if (that.direct != 0) {
-            that.control.selid("map" + that.curindex);
-        }*/
-    },
-    formattop:function(){
-        var that = mapinfo;
-        var dtop = null;
-        var index = 0;
-        var info = null;
-        var html = "";
-
-        dtop = document.all("content-top");
-        if(!dtop)return;
-        if(that.direct==0)return;
-
-        if (that.startindex == 0)
-            return;
-        index = that.startindex - 1;
-
-        //if (index <= 0) 
-        //    return;
-        
-        info = that.datalist[index];
-        if (!info) return;
-        //html = " <div class='mapinfo-right-item'><label>"
-        //        + info.name + "</label><br /><label>"
-        //        + info.price + "</label><br /><label>"
-        //        + info.address + "</label><br /><label>"
-        //        + info.phone + "</label></div>";
-        html = that.gethtmlinfo(info);
-        dtop.innerHTML = html;
-    },
-    formatcenter:function(){
-        var that = mapinfo;
-        var dcenter = null;
-        var html = "";
-        var h = "", n = 0;
-        var d_down="",d_up="";
-        var info = null;
-
-        dcenter = document.all("content-center");
-        if (!dcenter) return;
-
-        var i = that.startindex;
-        for (i = that.startindex; i <= that.endindex; i++) {
-            info = that.datalist[i];
-            if (info) {
-                d_up = "";
-                d_down = "";
-                if (i < that.endindex) {
-                    n = i + 1;
-                    d_down = "map" + n;
-                }                    
-
-                if (i > that.startindex) {
-                    n = i - 1;
-                    d_up = "map" + n;
-                }                    
-
-                h = that.gethtmlinfo(info, "map" + i, d_down, d_up);
-                html += h;
-            }
-        }
-        dcenter.innerHTML = html;
-    },
-    formatbottom:function(){
-        var that = mapinfo;
-        var dbottom = null;
-        var html = "";
-        var info = null;
-        var index = 0;
-
-        dbottom = document.all("content-bottom");
-        if (!dbottom) return;
-
-        if (that.endindex >= that.account - 1)
-            return;
-
-        index = that.endindex + 1;
-        info = that.datalist[index];
-
-        if (!info) return;
-
-        html = that.gethtmlinfo(info);
-        dbottom.innerHTML = html;
-
-    },
-    gethtmlinfo: function (info,id,down,up) {
-        var that = mapinfo;
-        var lbl_price = "", lbl_addr = "", lbl_phone = "";
-        if(id && id!="")
-            html ='<dl class="clear"><dt><img src="'+info.src+'" /></dt>'
-				+  '<dd class="food_name clear"><span>'+info.name+'</span><i>￥'+info.price+'</i></dd><dd class="shicai">'+info.shicai+'</dd></dl>'
-        //html += info.name + "</label><br /><label>"
-        //        + info.price + "</label><br /><label>"
-        //        + info.address + "</label><br /><label>"
-        //        + info.phone + "</label></div>";
-        return html;
+       
     },
     addlisten: function () {
         var that = mapinfo;
         that.control = new controlevent({
             selid: that.selid,//控件选中后事件
             noMove: that.nomove,//控件移动失败后事件
+            extEnter: that.enter,
             extMoveData:that.extMoveData,//控件移动前扩展事件
             defaultid: "food0"//默认光标控件id
         });
         that.control.begin();
+    },
+    enter:function(){
+    	var control=this;
+    	var food_id=document.getElementById(control.curid);
+   		var food_id=food_id.getAttribute('food_id');
+   		//console.log(food_id);
+    	backUrl=window.location.href;
+    	backUrl = encodeURIComponent(backUrl);
+    	url=config.portal_restaurant_cart_url
+    	url=common.setBaseParam(url);
+    	url = tp.util.appendParam(url, "backUrl",backUrl);
+    	url = tp.util.appendParam(url, "food_id",food_id);
+    	tp.util.redirectUrl(url);
     },
     selid: function (id) {
         var that = mapinfo;
